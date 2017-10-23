@@ -1,0 +1,169 @@
+
+html, body {
+  height: 100%;
+	display: flex;
+  flex-direction: column;
+	margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body > * {
+  flex-shrink; 9;
+
+}
+
+* h1{
+  	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color:#ffffff;
+    margin:0;
+}
+
+* h2{
+    color:#ffffff;
+  	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+* a {
+	text-decoration:none;
+	font-weight:italic;
+	color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+* p{
+  	font-family: Helvetica, Arial, sans-serif;
+    color:#ffffff;
+}
+
+* li{
+  	font-family: Helvetica, Arial, sans-serif;
+}
+
+* ul{
+  	margin: 0;
+}
+
+
+/*BACKGROUND BACKGROUND BACKGROUND BACKGROUND*/
+#background {
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+#background, #background li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #background, #background li {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.background #hide {
+  display: none;
+}
+
+/*NOAH KLEIN TITLE NOAH KLEIN TITLE NOAH KLEIN TITLE */
+
+
+.noahklein {
+  position: absolute;
+  display:block;
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+  top:54%;
+}
+
+.noahklein ul{
+  list-style-type: none;
+	padding-left: 0px;
+  height: 100%;
+}
+
+.noahklein li{
+  position: relative;
+  display: block;
+}
+
+.noahklein h1{
+  text-align: center;
+  font-size: 67px;
+}
+
+
+.noahklein .noah {
+    text-align: center;
+  position: absolute;
+  width: auto;
+  left: 8%;
+  margin-top: -149px;
+  z-index: 2;
+}
+
+
+.noahklein .noah ul:hover {
+	cursor: pointer;
+}
+
+
+.noahklein .klein {
+  position: absolute;
+  width: auto;
+  right: 8%;
+  margin-top: -191px;
+  z-index: 2;
+}
+
+
+.noahklein .klein ul:hover {
+	cursor: pointer;
+}
+
+
+
+.coming{
+
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top:47%;
+}
+
+.coming p{
+  display: inline;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 9px;
+  color: #FFFFFF;
+  padding: 40px;
+  border: 2px solid #FFFFFF;
+}
+
+.contact{
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top:50%;
+}
+
+.contact p{
+  display: inline;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 9px;
+  padding: 40px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
