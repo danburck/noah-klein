@@ -8,26 +8,21 @@ html, body {
   border: 0;
 }
 
-body > * {
-  flex-shrink; 9;
-
-}
 
 * h1{
-  	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
   color:#ffffff;
     margin:0;
 }
 
 * h2{
     color:#ffffff;
-  	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 
 * a {
-	text-decoration:none;
-	font-weight:italic;
+	text-decoration: none;
 	color: #000000;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -77,7 +72,7 @@ body > * {
 
 .noahklein {
   position: absolute;
-  display:block;
+  display: block;
   text-align: center;
 
   width: 100%;
@@ -130,24 +125,112 @@ body > * {
 	cursor: pointer;
 }
 
+/*SONGSSONGSSONGSSONGSSONGSSONGSSONGSSONGSSONGSSONGS*/
 
 
-.coming{
-
+.songs {
   text-align: center;
-  position: absolute;
+	position: absolute;
   width: 100%;
-  top:47%;
+  margin-top: -44px;
+  top:36%;
+  z-index: 1;
 }
 
-.coming p{
-  display: inline;
-  width: 100%;
-  letter-spacing: 3px;
-  font-size: 9px;
-  color: #FFFFFF;
-  padding: 40px;
-  border: 2px solid #FFFFFF;
+.songs ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+.songs li{
+		position: relative;
+		display: block;
+}
+.songs li a{
+    letter-spacing: 4px;
+		font-size: 12px;
+    font-weight: 600;
+}
+
+.songs li a:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.songs .twentytwo {
+  top: -95px;
+  padding-right: 340px;
+
+}
+.songs .radiantlights {
+  top: -20px;
+  padding-right: 340px;
+}
+.songs .shadow {
+  padding-right: 320px;
+}
+.songs .cold {
+  top: 20px;
+  padding-right: 340px;
+}
+.songs .boy {
+  top: 32px;
+  padding-right: 320px;
+}
+.songs .inseason {
+  top: 60px;
+  padding-right: 600px;
+}
+
+
+/*FOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTER*/
+
+.footer {
+  text-align: center;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+.footer p {
+		font-size:9px;
+	}
+
+.linkbar .container {
+	position: relative;
+	display: inline-flex;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+.linkbar .container ul{
+	list-style-type: none;
+	padding-left: 0px;
+  padding-right: 8px;
+}
+.linkbar .container li{
+		position: relative;
+		display: inline;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.linkbar .container img{
+	width: 20px;
+}
+
+.linkbar .spotify:hover {
+    opacity: 0.7;
+}
+
+.linkbar .soundcloud:hover {
+    opacity: 0.7;
+}
+
+.linkbar .instagram:hover {
+    opacity: 0.7;
+}
+.linkbar .facebook:hover {
+    opacity: 0.7;
 }
 
 .contact{
@@ -166,4 +249,123 @@ body > * {
   padding: 40px;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
+}
+
+.contact p:hover{
+  text-decoration: line-through;
+}
+
+.back{
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top:60%;
+}
+
+.back p{
+  display: inline;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 9px;
+}
+
+.back p:hover {
+	cursor: pointer;
+}
+
+
+
+/*STYLE CHANGE UNDER WIDTH 980px*/
+@media (max-width: 980px) {
+	.songs {
+  /*  padding-left: 5%; */
+    top:34%;
+	}
+  .songs #songs {
+    padding-left: 10%;
+  }
+}
+
+/*STYLE CHANGE UNDER WIDTH 880px*/
+@media (max-width: 880px) {
+	.songs {
+    top:32%;
+	}
+
+  .songs .inseason {
+    top:40px;
+    padding-right: 60%;
+}
+}
+
+
+
+/*STYLE CHANGE UNDER WIDTH 700px*/
+@media (max-width: 700px) {
+    .songs #songs {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
+
+
+/*STYLE CHANGE UNDER WIDTH 600px --> mobile */
+@media (max-width: 600px) {
+  .noahklein {
+    position: relative;
+    display: block;
+    top:0%;
+  }
+
+  .noahklein h1{
+    color: #808080;
+    font-size: 300%;
+  }
+
+
+  .noahklein li {
+    display: inline-block;
+  }
+
+  .noahklein .noah {
+    position: relative;
+    text-align: left;
+    left: 0%;
+    margin-top: 0px;
+  }
+
+  .noahklein .noah .container{
+    display: inline-block;
+  }
+
+  .noahklein .klein {
+    position: relative;
+    text-align: left;
+    left: 0%;
+    margin-top:0px;
+  }
+
+  .noahklein .klein .container{
+    display: inline-block;
+  }
+
+  .songs {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+    top: 0;
+  }
+
+  .songs #songs a {
+    font-size: 250%;
+  }
+
+  .songs #songs {
+    top: 0;
+    left:0
+  }
+
 }
