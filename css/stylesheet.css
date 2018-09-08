@@ -80,6 +80,10 @@ html, body {
   top:54%;
 }
 
+.noahklein h1:hover {
+  text-decoration: line-through;
+}
+
 .noahklein ul{
   list-style-type: none;
 	padding-left: 0px;
