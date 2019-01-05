@@ -1,0 +1,563 @@
+html, body {
+  height: 100%;
+	margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+
+/* FONTS */
+* h1{
+  	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color:#ffffff;
+    margin:0;
+}
+
+* h2{
+    color:#ffffff;
+  	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+
+* a {
+	text-decoration: none;
+	color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+* p{
+  	font-family: Helvetica, Arial, sans-serif;
+    color:#ffffff;
+    margin:0;
+}
+
+
+* li{
+  	font-family: Helvetica, Arial, sans-serif;
+}
+
+* ul{
+  	margin: 0;
+}
+
+/* nav */
+
+header {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+
+}
+
+.nav .container {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    left:0%;
+    transition: 0.3s;
+}
+
+.nav ul {
+    padding-left: 0px;
+}
+
+.nav ul li {
+    position: relative;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.nav a {
+    margin-left: auto;
+    margin-right: auto;
+    color: #4f4f4f;
+    letter-spacing: 4px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: red;
+    cursor: pointer;
+
+}
+
+.navscrolled {
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* top */
+
+.top {
+  position: relative;
+  height: 100%;
+  display: block;
+}
+
+.top .container #background {
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.top .container #background, #background li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#background, #background li {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.background #hide {
+  display: none;
+}
+
+
+/*NOAH KLEIN TITLE NOAH KLEIN TITLE NOAH KLEIN TITLE */
+
+
+.noahklein {
+  position: absolute;
+  display: block;
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+  top:54%;
+}
+
+.noahklein h1:hover {
+  text-decoration: line-through;
+}
+
+.noahklein ul{
+  list-style-type: none;
+	padding-left: 0px;
+  height: 100%;
+}
+
+.noahklein li{
+  position: relative;
+  display: block;
+}
+
+.noahklein h1{
+  text-align: center;
+  font-size: 67px;
+}
+
+
+.noahklein .noah {
+    text-align: center;
+  position: absolute;
+  width: auto;
+  left: 8%;
+  margin-top: -149px;
+  z-index: 2;
+}
+
+
+.noahklein .noah ul:hover {
+	cursor: pointer;
+}
+
+
+.noahklein .klein {
+  position: absolute;
+  width: auto;
+  right: 8%;
+  margin-top: -191px;
+  z-index: 2;
+}
+
+
+.noahklein .klein ul:hover {
+	cursor: pointer;
+}
+
+/*SONGSSONGSSONGSSONGSSONGSSONGSSONGSSONGSSONGSSONGS*/
+
+
+.songs {
+  text-align: center;
+	position: absolute;
+  width: 100%;
+  margin-top: -44px;
+  top:36%;
+  z-index: 1;
+}
+
+.songs ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+.songs li{
+		position: relative;
+		display: block;
+}
+.songs li a{
+    letter-spacing: 4px;
+		font-size: 12px;
+    font-weight: 600;
+}
+
+.songs li a:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.songs .twentytwo {
+  top: -95px;
+  padding-right: 340px;
+
+}
+.songs .radiantlights {
+  top: -20px;
+  padding-right: 340px;
+}
+.songs .shadow {
+  padding-right: 320px;
+}
+.songs .cold {
+  top: 20px;
+  padding-right: 340px;
+}
+.songs .boy {
+  top: 32px;
+  padding-right: 320px;
+}
+.songs .inseason {
+  top: 60px;
+  padding-right: 600px;
+}
+
+
+
+/* floating */
+
+.floating {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    display: block;
+    top: 50%;
+    z-index: -2;
+    display: none;
+}
+
+.floating .container{
+    display: block;
+    text-align: center;
+}
+
+.floating .container h1{
+    letter-spacing: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* contact and back */
+
+.contact{
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top:50%;
+}
+
+.contact p{
+  display: inline;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 9px;
+  padding: 40px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.contact p:hover{
+  text-decoration: line-through;
+}
+
+.back{
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top:60%;
+}
+
+.back p{
+  display: inline;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 9px;
+}
+
+.back p:hover {
+	cursor: pointer;
+}
+
+
+
+/* main */
+.main {
+  position: relative;
+  display: block;
+}
+
+.main .container {
+  position: relative;
+  width:50%;
+  left: 25%;
+  padding-top: 22.8%;
+  padding-bottom: 200%;
+  height: 100%;
+}
+
+.main .container .backimage img {
+  display: inline-block;
+  position: absolute;
+  width: 38%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.main .container .backimage .back1 {
+  top: 47.3%;
+  left: -23%;
+}
+
+.main .container .backimage .back1:hover {
+  opacity: 0;
+}
+
+.main .container .backimage .back2 {
+  top: 67.3%;
+  left: -23%;
+}
+
+.main .container .backimage .back2:hover {
+  opacity: 0;
+}
+
+.main .container .backimage .back3 {
+  top: 61.3%;
+  left: 90%;
+}
+
+.main .container .backimage .back3:hover {
+  opacity: 0;
+}
+
+.main .container .backimage .back4 {
+  top: 86.3%;
+  left: 64%;
+}
+
+.main .container .backimage .back4:hover {
+  opacity: 0;
+}
+
+.main .container .video {
+  position: relative ;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75.0%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main .container .video .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main .container p{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #4f4f4f;
+  padding-top: 8%;
+  font-size: 8px;
+  font-family: Sawarabi Mincho;
+}
+
+/*FOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTER*/
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 1.4%;
+  width: 100%;
+}
+
+.footer p {
+		font-size:9px;
+	}
+
+.linkbar .container {
+	position: relative;
+	display: inline-flex;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+.linkbar .container ul{
+	list-style-type: none;
+	padding-left: 0px;
+  padding-right: 8px;
+}
+.linkbar .container li{
+		position: relative;
+		display: inline;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.linkbar .container img{
+	width: 20px;
+}
+
+.linkbar .spotify:hover {
+    opacity: 0.7;
+}
+
+.linkbar .soundcloud:hover {
+    opacity: 0.7;
+}
+
+.linkbar .instagram:hover {
+    opacity: 0.7;
+}
+.linkbar .facebook:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+/*STYLE CHANGE UNDER WIDTH 980px*/
+@media (max-width: 980px) {
+	.songs {
+  /*  padding-left: 5%; */
+    top:34%;
+	}
+  .songs #songs {
+    padding-left: 10%;
+  }
+}
+
+/*STYLE CHANGE UNDER WIDTH 880px*/
+@media (max-width: 880px) {
+	.songs {
+    top:32%;
+	}
+
+  .songs .inseason {
+    top:40px;
+    padding-right: 60%;
+}
+}
+
+
+
+/*STYLE CHANGE UNDER WIDTH 700px*/
+@media (max-width: 700px) {
+    .songs #songs {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
+
+
+/*STYLE CHANGE UNDER WIDTH 600px --> mobile */
+@media (max-width: 600px) {
+  .noahklein {
+    position: relative;
+    display: block;
+    top:0%;
+  }
+
+  .noahklein h1{
+    color: #808080;
+    font-size: 300%;
+  }
+
+
+  .noahklein li {
+    display: inline-block;
+  }
+
+  .noahklein .noah {
+    position: relative;
+    text-align: left;
+    left: 0%;
+    margin-top: 0px;
+  }
+
+  .noahklein .noah .container{
+    display: inline-block;
+  }
+
+  .noahklein .klein {
+    position: relative;
+    text-align: left;
+    left: 0%;
+    margin-top:0px;
+  }
+
+  .noahklein .klein .container{
+    display: inline-block;
+  }
+
+  .songs {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+    top: 0;
+  }
+
+  .songs #songs a {
+    font-size: 250%;
+  }
+
+  .songs #songs {
+    top: 0;
+    left:0
+  }
+
+}

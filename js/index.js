@@ -1,5 +1,73 @@
 var main = function() {
 
+
+/* Navigation scroll */
+
+$(function() {
+    var header = $(".nav .container");
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 500) {
+            header.addClass("navscrolled");
+        } else {
+            header.removeClass("navscrolled");
+        }
+    });
+
+});
+
+
+
+/* Navigation links */
+
+$('header .nav .container .pagenav').click(function() {
+    $('html,body').animate({
+        scrollTop: $('.main').offset().top},
+        'slow');
+});
+
+
+  $('header .nav .container .videonav').click(function() {
+      $('html,body').animate({
+          scrollTop: $('.main .c1 .video').offset().top -80 },
+          'slow');
+  });
+
+
+  $('header .nav .container .musicnav').click(function() {
+      $('html,body').animate({
+          scrollTop: $('.top').offset().top},
+          'slow');
+      $('.background .contact').fadeTo( 150, 0.0 );
+      $('.background .contact').hide(0);
+      $('.contact').fadeTo( 150, 0.0 );
+      $('.contact').hide(0);
+      $('.back').fadeTo( 150, 0.0 );
+      $('.back').hide(0);
+      $('.songs').fadeTo( 150, 1.0 );
+      $('.songs').show(0);
+
+  });
+
+
+  $('header .nav .container .contactnav').click(function() {
+      $('html,body').animate({
+          scrollTop: $('.top').offset().top},
+          'slow');
+      $('.background .contact').fadeTo( 150, 1.0 );
+      $('.background .contact').show(0);
+      $('.contact').fadeTo( 150, 1.0 );
+      $('.contact').show(0);
+      $('.back').fadeTo( 150, 1.0 );
+      $('.back').show(0);
+      $('.songs').hide(0);
+  });
+
+
+
+/* Season songs */
+
   $('.songs .twentytwo a').hover(function(){
     $('.background .twentytwo').fadeTo( 220, 1.0 );
     $('.background .twentytwo').show(0);
@@ -81,6 +149,11 @@ var main = function() {
       });
 
 
+    $('.top .container .songs .boy').click(function() {
+        $('html,body').animate({
+            scrollTop: $('.main .c1').offset().top},
+            'slow');
+    });
 
 }
 /* jQuery: run the main function once the web page has fully loaded.*/
