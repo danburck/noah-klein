@@ -50,13 +50,11 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-
-
 }
 
 .nav .container {
     position: relative;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 15px;
     text-align: center;
     left:0%;
@@ -78,7 +76,7 @@ header {
 .nav a {
     margin-left: auto;
     margin-right: auto;
-    color: #4f4f4f;
+    color: #ffffff ;
     letter-spacing: 4px;
     font-size: 10px;
     font-weight: 400;
@@ -93,7 +91,7 @@ header {
 }
 
 .navscrolled {
-    background-color: #fff;
+    background-color: #151515;
     transition: 0.3s;
 }
 
@@ -259,8 +257,8 @@ header {
     overflow: hidden;
     display: block;
     top: 50%;
-    z-index: -2;
-    display: none;
+    z-index: 1;
+
 }
 
 .floating .container{
@@ -270,58 +268,13 @@ header {
 
 .floating .container h1{
     letter-spacing: 10px;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 400;
-    text-transform: uppercase;
+    color: #D4471B;
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
 }
-
-/* contact and back */
-
-.contact{
-  display: none;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top:50%;
-}
-
-.contact p{
-  display: inline;
-  width: 100%;
-  letter-spacing: 3px;
-  font-size: 9px;
-  padding: 40px;
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-}
-
-.contact p:hover{
-  text-decoration: line-through;
-}
-
-.back{
-  display: none;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top:60%;
-}
-
-.back p{
-  display: inline;
-  width: 100%;
-  letter-spacing: 3px;
-  font-size: 9px;
-}
-
-.back p:hover {
-	cursor: pointer;
-}
-
-
 
 /* main */
 .main {
@@ -329,12 +282,27 @@ header {
   display: block;
 }
 
+
+.main .contentImage .imageBlock1 {
+  position: relative;
+  width:100%;
+  padding-top: 0%;
+  padding-bottom: 60.7%;
+}
+
+.main .contentImage .imageBlockHasting {
+  position: relative;
+  width:100%;
+  padding-top: 0%;
+  padding-bottom: 56.25%;
+}
+
 .main .container {
   position: relative;
   width:50%;
   left: 25%;
   padding-top: 22.8%;
-  padding-bottom: 200%;
+  padding-bottom: 100%;
   height: 100%;
 }
 
@@ -346,43 +314,6 @@ header {
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-}
-
-
-.main .container .backimage .back1 {
-  top: 47.3%;
-  left: -23%;
-}
-
-.main .container .backimage .back1:hover {
-  opacity: 0;
-}
-
-.main .container .backimage .back2 {
-  top: 67.3%;
-  left: -23%;
-}
-
-.main .container .backimage .back2:hover {
-  opacity: 0;
-}
-
-.main .container .backimage .back3 {
-  top: 61.3%;
-  left: 90%;
-}
-
-.main .container .backimage .back3:hover {
-  opacity: 0;
-}
-
-.main .container .backimage .back4 {
-  top: 86.3%;
-  left: 64%;
-}
-
-.main .container .backimage .back4:hover {
-  opacity: 0;
 }
 
 .main .container .video {
@@ -413,59 +344,45 @@ header {
   font-family: Sawarabi Mincho;
 }
 
-/*FOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTER*/
+/*LINKS ON THE SIDE*/
 
-.footer {
-  text-align: center;
+.links {
+  text-align: right;
   position: fixed;
-  bottom: 1.4%;
-  width: 100%;
+  right: 3%;
+  bottom: 50%;
 }
 
-.footer p {
+.links p {
 		font-size:9px;
 	}
 
-.linkbar .container {
+.links .container {
 	position: relative;
 	display: inline-flex;
   padding-top:6px;
   padding-bottom:6px;
 }
 
-.linkbar .container ul{
+.links .container ul{
 	list-style-type: none;
 	padding-left: 0px;
-  padding-right: 8px;
+  padding-right: 0px;
 }
-.linkbar .container li{
+.links .container li{
 		position: relative;
-		display: inline;
-    padding-left:16px;
-    padding-right:16px;
+		display: block;
+    padding-top:2px;
+    padding-bottom:2px;
 }
 
-.linkbar .container img{
+.links .container img{
 	width: 20px;
 }
 
-.linkbar .spotify:hover {
+.links .socialmediaicon:hover {
     opacity: 0.7;
 }
-
-.linkbar .soundcloud:hover {
-    opacity: 0.7;
-}
-
-.linkbar .instagram:hover {
-    opacity: 0.7;
-}
-.linkbar .facebook:hover {
-    opacity: 0.7;
-}
-
-
-
 
 
 /*STYLE CHANGE UNDER WIDTH 980px*/
