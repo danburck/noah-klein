@@ -218,6 +218,7 @@ a.anchor {
   width: 100%;
   height: auto;
   top:54%;
+  z-index: 0;
 }
 
 .noahKleinSides h1:hover {
