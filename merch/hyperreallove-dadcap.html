@@ -7,38 +7,6 @@
   <title>Noah Klein - Hyper Real Love Dad Cap</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="http://www.w3schools.com/lib/w3data.js"></script>
-
-  <!-- includeHTML
-  <script>function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-    }
-  }
-  }
-  </script>
-  -->
-
   <link rel="shortcut icon" href="/icons/favicon.ico"/>
   <!-- bootstrap4 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -46,7 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet"  type="text/css" href="/stylesheet.css">
+  <link rel="stylesheet"  type="text/css" href="/css/style.css">    
   <meta property="og:image" content="img/sample_greywhite_right_small.png" />
   <meta property="og:url"content="www.noah-klein.com">
   <meta property="og:title" content="Noah Klein - Producer/Artist" />
@@ -55,7 +23,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3ffaa973b547f0d5572a1f566/aeb9dee5a655bef3ccd515a7c.js");</script>
 </head>
-  <header>
+ <header>
     <div class="nav">
       <div class="container">
         <ul>
@@ -70,10 +38,18 @@
       <div class="links">
         <div class="container" >
           <ul>
-            <li class="socialmediaicon"><a href="https://open.spotify.com/artist/6v46qXvQK6xsSibC2xnftD" target="_blank"><img src="/icons/spotify32px.png" alt="spotify"/></a></li>
-            <li class="socialmediaicon"><a href="https://www.instagram.com/noahkleinmusic/" target="_blank"><img src="/icons/insta32px.png" alt="instagram"/></a></li>
-            <li class="socialmediaicon"><a href="https://www.youtube.com/noahkleinmusic" target="_blank"><img src="/icons/youtube32px.png" alt="youtube"/></a></li>
-            <li class="socialmediaicon"><a href="https://soundcloud.com/noahklein" target="_blank"><img src="/icons/soundcloud32px.png" alt="soundcloud"/></a></li>
+            <li class="socialmediaicon"><a href="https://open.spotify.com/artist/6v46qXvQK6xsSibC2xnftD" target="_blank">
+              <i class="fa fa-spotify" aria-hidden="true"></i>
+            </a></li>
+            <li class="socialmediaicon"><a href="https://www.instagram.com/noahkleinmusic/" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a></li>
+            <li class="socialmediaicon"><a href="https://www.youtube.com/noahkleinmusic" target="_blank">
+              <i class="fa fa-youtube"></i>
+            </a></li>
+            <li class="socialmediaicon"><a href="https://soundcloud.com/noahklein" target="_blank">
+              <i class="fa fa-soundcloud"></i>
+            </a></li>
           </ul>
         </div>
       </div>
@@ -128,10 +104,14 @@
           </div>
         </div>
       </div>
-
-
-
-
+    </div>
+    <div class="footer">
+      <ul class="footer-law">
+        <li><a href="imprint.html"class="imprintbutton">&nbsp;Imprint</a></li>
+        <li><a href="privacy.html"class="privacypolicy"> Privacy</a></li>
+      </ul>
+      <p>Coded with <3 by &copy; 2020 Noah Klein</p>
+    </div>
     <script src="/js/index.js"></script>
     <script>includeHTML();</script>
   </body>
