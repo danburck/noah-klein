@@ -1,0 +1,37 @@
+.card {
+	position: relative;
+	border: none
+}
+.card img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.card .jumbotron{
+  position: absolute;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  padding: 10% 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: .2s ease;
+  opacity: 0;
+  width: 70%;
+  height: 60%;
+}
+.card:hover .jumbotron {
+  opacity: 1;
+}
+
+.card .jumbotron .description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

@@ -1,0 +1,73 @@
+.nav .container {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    transition: 0.3s;
+    max-width: none;
+}
+.nav ul {
+    padding-left: 0px;
+}
+.nav ul li {
+    position: relative;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav a {
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000 ;
+    letter-spacing: 4px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav .noahkleinnav a{
+  color: #C97F37 !important ;
+}
+.nav .workwithmehnav {
+  padding-right: 155px;
+}
+.nav a:hover {
+    color: red;
+    cursor: pointer;
+}
+.navscrolled {
+    background-color: #FF7F00;
+    transition: 0.3s;
+    margin: auto;
+}
+
+
+/*SOCIAL MEDIA LINKS ON THE SIDE*/
+.links {
+  text-align: right;
+  position: fixed;
+  right: 4.6%;
+  top: 25px;
+}
+.links .container {
+	position: relative;
+	display: inline-flex;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+.links .container ul{
+	list-style-type: none;
+	padding-left: 0px;
+  padding-right: 0px;
+}
+.links .container li{
+		position: relative;
+		display: inline-block;
+    padding: 0px 5px 0px 5px;
+}
+.socialmediaicon i {
+  font-size: 20px;
+}
+.socialmediaicon:hover {
+    opacity: 0.7;
+}

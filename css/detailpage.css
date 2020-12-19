@@ -1,0 +1,39 @@
+.detailMain {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.detailMain .jumbotron{
+  /*margin-top: 30px;*/
+  text-align: center;
+  padding: 5% 18%;
+  margin: 0;
+  /*margin-bottom: 30px;*/
+}
+
+.detailMain div.col-sm-6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+    margin: 15px 0 15px 0;
+}
+
+
+.detailMain img{
+  margin: 30px 0 30px 0;
+}
+
+.detailMain .back{
+  margin: 30px 0 30px 0;
+  text-decoration: none;
+}
+
+.detailMain .back a{
+  text-decoration: none;
+}
+
+.detailMain .back a:hover{
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}

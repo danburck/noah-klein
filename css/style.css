@@ -1,0 +1,158 @@
+/* --- Components design --- */
+@import url("landingpage.css");
+@import url("detailpage.css");
+@import url("footer.css");
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/navbar.css");
+
+
+
+/* --- Fonts --- */
+body {
+  height: 100vh;
+	margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  background-image: linear-gradient(-225deg, rgba(30,30,30,0.1) 0%, rgba(46,46,46,0.2) 100%), url("/img/backgroundCasio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2{
+  color: #000000;
+  letter-spacing: 5px;
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+h3{
+  color: #000000;
+  letter-spacing: 5px;
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Project Detail page subtitle */
+h4{
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000 ;
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+  letter-spacing: 4px;
+  font-size:9px;
+  font-weight:bold;
+  text-decoration: none;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+p{
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: 800;
+    margin:0;
+}
+header {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+  /* Grid Systems */
+
+div.col-sm-6 {
+    padding: 0;
+}
+
+div.col-sm-12 .jumbotron{
+  padding: 6% 8%;
+}
+
+
+div.col-sm-12 img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+div.col-sm-4 img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.ankerWorkWithMe{
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.ankerWorkWithMe div.col-sm-12 .jumbotron{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* SIGNUP */
+#mc_embed_signup{
+  background-color: #e9ecef !important;
+}
+
+
+#mc_embed_signup input.email{
+  color: #000000 ;
+  letter-spacing: 4px!important;
+  font-size: 10px!important;
+  font-weight: 800!important;
+  text-decoration: none!important;
+  width:80%!important;
+  margin-left: 10%!important;
+  text-align: center!important;
+}
+
+
+#mc_embed_signup .button{
+  background-color: #FFA147!important;
+  border-color: #FFA147!important;
+  width:20%!important;
+  margin-left: 40%!important;
+  color: #000000!important ;
+  letter-spacing: 4px!important;
+  font-size: 10px!important;
+  font-weight: 800!important;
+  text-decoration: none!important;
+}
+

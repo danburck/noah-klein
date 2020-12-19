@@ -1,0 +1,65 @@
+.landingpage{
+  height: 100%;
+}
+.landingpage .ankerNoahKlein {
+  padding-top: 250px;
+}
+.landingpage .ankerNoahKlein .container{
+  width: 60%;
+}
+.landingpage .ankerNoahKlein .jumbotron {
+  text-align: center;
+  padding: 5% 18%;
+  margin-bottom: 150px;
+}
+
+.noahKleinSides {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  top:54%;
+  z-index: 0;
+}
+.noahKleinSides h1:hover {
+  text-decoration: line-through;
+}
+.noahKleinSides ul{
+  list-style-type: none;
+	padding-left: 0px;
+  height: 100%;
+}
+.noahKleinSides li{
+  position: relative;
+  display: block;
+}
+.noahKleinSides h1{
+  text-align: center;
+  font-size: 67px;
+  color: #C97F37;
+}
+.noahKleinSides a{
+  text-decoration: none;
+}
+.noahKleinSides .noah {
+  text-align: center;
+  position: absolute;
+  width: auto;
+  left: 8%;
+  margin-top: -149px;
+  z-index: 2;
+}
+.noahKleinSides .noah ul:hover {
+	cursor: pointer;
+}
+.noahKleinSides .klein {
+  position: absolute;
+  width: auto;
+  right: 8%;
+  margin-top: -191px;
+  z-index: 2;
+}
+.noahKleinSides .klein ul:hover {
+	cursor: pointer;
+}
