@@ -1,4 +1,4 @@
-.nav .container {
+nav .container {
     position: relative;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -6,16 +6,16 @@
     transition: 0.3s;
     max-width: none;
 }
-.nav ul {
+nav ul {
     padding-left: 0px;
 }
-.nav ul li {
+nav ul li {
     position: relative;
     display: inline;
     padding-left: 30px;
     padding-right: 30px;
 }
-.nav a {
+nav a {
     margin-left: auto;
     margin-right: auto;
     color: #000000 ;
@@ -25,13 +25,13 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.nav .noahkleinnav a{
+nav .noahkleinnav a{
   color: #C97F37 !important ;
 }
-.nav .workwithmehnav {
+nav .workwithmehnav {
   padding-right: 155px;
 }
-.nav a:hover {
+nav a:hover {
     color: red;
     cursor: pointer;
 }

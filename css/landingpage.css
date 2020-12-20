@@ -1,13 +1,13 @@
 .landingpage{
-  height: 100%;
+  height: 100vh;
 }
-.landingpage .ankerNoahKlein {
+.landingpage {
   padding-top: 250px;
 }
-.landingpage .ankerNoahKlein .container{
+.landingpage .container{
   width: 60%;
 }
-.landingpage .ankerNoahKlein .jumbotron {
+.landingpage .jumbotron {
   text-align: center;
   padding: 5% 18%;
   margin-bottom: 150px;
