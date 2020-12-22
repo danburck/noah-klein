@@ -13,39 +13,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet"  type="text/css" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body style="background-color: #151515">
-    <header>
-      <nav>
-        <div class="container">
-          <ul>
-            <li class="songwritingandproductionnav"><a href="/index.html#songwritingandproduction">Songwriting & Production</a></li>
-            <li class="mixingnav"><a href="/index.html#mixing">Mixing</a></li>
-            <li class="noahkleinnav"><a href="/index.html">Noah Klein</a></li>
-            <li class="merchnav"><a href="/index.html#merch">Merch</a></li>
-            <li class="workwithmehnav"><a href="/index.html#workwithme">Work With Me</a></li>
-          </ul>
-          <div class="links">
-            <div class="container" >
-              <ul>
-                <li class="socialmediaicon"><a href="https://open.spotify.com/artist/6v46qXvQK6xsSibC2xnftD" target="_blank">
-                  <i class="fa fa-spotify" aria-hidden="true"></i>
-                </a></li>
-                <li class="socialmediaicon"><a href="https://www.instagram.com/noahkleinmusic/" target="_blank">
-                  <i class="fa fa-instagram"></i>
-                </a></li>
-                <li class="socialmediaicon"><a href="https://www.youtube.com/noahkleinmusic" target="_blank">
-                  <i class="fa fa-youtube"></i>
-                </a></li>
-                <li class="socialmediaicon"><a href="https://soundcloud.com/noahklein" target="_blank">
-                  <i class="fa fa-soundcloud"></i>
-                </a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      <nav>
-    </header>
+    <header id="header"></header>
+    <script>
+      $("#header").load( "/header.html" );
+    </script> 
     <main>
       <div class="detailMain">
         <div class="detailSongwriterAndProduction">
@@ -127,19 +101,15 @@
         </div>
       </div>
     </main>
-    <footer>
-      <ul class="footer-law">
-        <li><a href="imprint.html"class="imprintbutton">&nbsp;Imprint</a></li>
-        <li><a href="privacy.html"class="privacypolicy"> Privacy</a></li>
-      </ul>
-      <p>Coded with <3 by &copy; 2020 Noah Klein</p>
-    </footer>
+    <footer id="footer"></footer>
+    <script>
+      $("#footer" ).load("/footer.html" );
+    </script> 
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3ffaa973b547f0d5572a1f566/aeb9dee5a655bef3ccd515a7c.js");</script>
-    <script>includeHTML();</script>
     <script src="/js/index.js"></script>
   </body>
 </html>

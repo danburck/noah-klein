@@ -1,3 +1,13 @@
+header {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 nav .container {
     position: relative;
     padding-top: 30px;
