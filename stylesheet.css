@@ -4,16 +4,12 @@ html, body {
   padding: 0;
   border: 0;
   position: relative;
-  /* The image used */
-  background-image: url("img/backgroundCasio.jpg");
+  background-image: linear-gradient(217deg, rgb(25,25,25,.1), rgba(50,50,50,0.3) 10%) url("img/backgroundCasio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-
-
 * h2{
   color: #000000;
   letter-spacing: 5px;
@@ -24,7 +20,6 @@ html, body {
   margin-top: 100px;
   margin-bottom: 40px;
 }
-
 * h3{
   color: #000000;
   letter-spacing: 5px;
@@ -33,8 +28,6 @@ html, body {
   text-transform: uppercase;
   text-align: center;
 }
-
-
 /* Project Detail page subtitle */
 h4{
   margin-left: auto;
@@ -45,16 +38,17 @@ h4{
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-
 }
-
-
 * a {
 	text-decoration: none;
 	color: #000000;
 }
-
-
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
 * p{
     color: #000000;
     letter-spacing: 2px;
@@ -63,224 +57,10 @@ h4{
     margin:0;
 }
 
-header {
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -120px;
-    visibility: hidden;
-}
-
-/* navigation bar in header*/
-.nav .container {
-    position: relative;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    text-align: center;
-    transition: 0.3s;
-    max-width: none;
-}
-
-.nav ul {
-    padding-left: 0px;
-}
-
-.nav ul li {
-    position: relative;
-    display: inline;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-
-.nav a {
-    margin-left: auto;
-    margin-right: auto;
-    color: #000000 ;
-    letter-spacing: 4px;
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.nav .noahkleinnav a{
-  color: #C97F37 !important ;
-}
-
-.nav .workwithmehnav {
-  padding-right: 155px;
-
-}
-
-.nav a:hover {
-    color: red;
-    cursor: pointer;
-}
-
-.navscrolled {
-    background-color: #FF7F00;
-    transition: 0.3s;
-    margin: auto;
-}
-
-
-/*SOCIAL MEDIA LINKS ON THE SIDE*/
-
-.links {
-  text-align: right;
-  position: fixed;
-  right: 4.6%;
-  top: 25px;
-}
-
-.links p {
-		font-size:9px;
-	}
-
-.links .container {
-	position: relative;
-	display: inline-flex;
-  padding-top:6px;
-  padding-bottom:6px;
-}
-
-.links .container ul{
-	list-style-type: none;
-	padding-left: 0px;
-  padding-right: 0px;
-}
-.links .container li{
-		position: relative;
-		display: inline-block;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    ;
-}
-
-.links .container img{
-	width: 20px;
-}
-
-.links .socialmediaicon:hover {
-    opacity: 0.7;
-}
-
-
-
-/* landing page elements*/
-.landingpage{
-  height: 100%;
-}
-
-.landingpage .ankerNoahKlein {
-  padding-top: 250px;
-}
-
-.landingpage .ankerNoahKlein .container{
-  width: 60%;
-
-}
-
-.landingpage .ankerNoahKlein .jumbotron {
-  text-align: center;
-  padding: 5% 18%;
-  margin-bottom: 150px;
-}
-
-.landingpage .ankerNoahKlein .btn-secondary {
-  color: #000000;
-  background-color: #FFA147;
-  border-color: #FFA147;
-  width:20%;
-  margin-left: 40%;
-}
-
-.landingpage .ankerNoahKlein .btn-secondary a{
-  text-decoration: none;
-}
-
-.noahKleinSides {
-  position: absolute;
-  display: block;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  top:54%;
-  z-index: 0;
-}
-
-.noahKleinSides h1:hover {
-  text-decoration: line-through;
-}
-
-.noahKleinSides ul{
-  list-style-type: none;
-	padding-left: 0px;
-  height: 100%;
-}
-
-.noahKleinSides li{
-  position: relative;
-  display: block;
-}
-
-.noahKleinSides h1{
-  text-align: center;
-  font-size: 67px;
-  color: #C97F37;
-}
-
-.noahKleinSides a{
-  text-decoration: none;
-}
-
-
-.noahKleinSides .noah {
-  text-align: center;
-  position: absolute;
-  width: auto;
-  left: 8%;
-  margin-top: -149px;
-  z-index: 2;
-}
-
-
-.noahKleinSides .noah ul:hover {
-	cursor: pointer;
-}
-
-
-.noahKleinSides .klein {
-  position: absolute;
-  width: auto;
-  right: 8%;
-  margin-top: -191px;
-  z-index: 2;
-}
-
-
-.noahKleinSides .klein ul:hover {
-	cursor: pointer;
-}
-
-
   /* Grid images and hovering */
 div.col-sm-6 {
   padding: 0;
 }
-
 div.col-sm-6 img{
   opacity: 1;
   display: block;
@@ -289,12 +69,9 @@ div.col-sm-6 img{
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 div.col-sm-12 .jumbotron{
   padding: 6% 8%;
 }
-
-
 div.col-sm-6 .jumbotron{
   position: absolute;
   width: 100%;
@@ -306,16 +83,12 @@ div.col-sm-6 .jumbotron{
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
-
 .main div.col-sm-6 .jumbotron{
   transition: .2s ease;
   opacity: 0;
   width: 70%;
   height: 60%;
 }
-
-
 div.col-sm-6 .jumbotron .description{
   position: absolute;
   top: 50%;
@@ -323,13 +96,9 @@ div.col-sm-6 .jumbotron .description{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
 .main div.col-sm-6:hover .jumbotron {
   opacity: 1;
 }
-
-
-
 div.col-sm-12 img{
   opacity: 1;
   display: block;
@@ -338,7 +107,6 @@ div.col-sm-12 img{
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 div.col-sm-4 img{
   opacity: 1;
   display: block;
@@ -348,12 +116,10 @@ div.col-sm-4 img{
   backface-visibility: hidden;
 }
 
-
 .ankerWorkWithMe{
   margin-top: 100px;
   margin-bottom: 40px;
 }
-
 .ankerWorkWithMe div.col-sm-12 .jumbotron{
   position: absolute;
   top: 50%;
@@ -363,49 +129,10 @@ div.col-sm-4 img{
   text-align: center;
 }
 
-
-
-/* DETAIL PAGES */
-.detailSongwriterAndProduction{
-  text-align: center;
-  margin-top: 100px;
-}
-
-.detailSongwriterAndProduction .jumbotron{
-  margin-top: 30px;
-  text-align: center;
-  padding: 5% 18%;
-  margin-bottom: 30px;
-}
-
-.detailSongwriterAndProduction img{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.detailSongwriterAndProduction .back{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-decoration: none;
-}
-
-.detailSongwriterAndProduction .back a{
-  text-decoration: none;
-}
-
-.detailSongwriterAndProduction .back a:hover{
-  text-decoration: none;
-  color: red;
-  cursor: pointer;
-}
-
 /* SIGNUP */
-
 #mc_embed_signup{
   background-color: #e9ecef !important;
 }
-
-
 #mc_embed_signup input.email{
   color: #000000 ;
   letter-spacing: 4px!important;
@@ -416,8 +143,6 @@ div.col-sm-4 img{
   margin-left: 10%!important;
   text-align: center!important;
 }
-
-
 #mc_embed_signup .button{
   background-color: #FFA147!important;
   border-color: #FFA147!important;
@@ -428,67 +153,4 @@ div.col-sm-4 img{
   font-size: 10px!important;
   font-weight: 800!important;
   text-decoration: none!important;
-}
-
-/* FOOTER */
-
-.footer {
-position: relative;
-text-align: center;
-flex-grow: 1;
-display: inline;}
-
-.footer .inner {
-	position: absolute;
-	bottom: 30px;
-	width: 100%;
-
-}
-.footer ul {
-text-align: center;
-padding-left: 0;
-margin-top:0;
-position:relative;
-
-}
-
-.footer li {
-	display:inline;
-}
-
-.footer a {
-  text-decoration:none;
-  letter-spacing: 4px;
-  color:#696969;
-  font-size:9px;
-  font-weight:bold;
-  text-transform:uppercase;
-  position: relative;
-  bottom: 0;
-  left:auto;
-  right:auto;
-}
-
-.footer a:hover {
-	color: #696969;
-	cursor: pointer;
-  }
-
-.footer .psi {
-	text-decoration:none;
-  color:#696969;
-  font-size:9px;
-  font-weight:bold;
-  text-transform:uppercase;
-  position: relative;
-  bottom: 0;
-  left:auto;
-  right:auto;
-}
-
-.footer p {
-	color:#696969;
-  letter-spacing: 4px;
-  font-size:9px;
-  padding-bottom: 10px;
 }

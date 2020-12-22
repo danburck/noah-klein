@@ -13,73 +13,47 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet"  type="text/css" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <header>
-    <div class="nav">
-      <div class="container">
-        <ul>
-          <li class="songwritingandproductionnav"><a href="/index.html#songwritingandproduction">Songwriting & Production</a></li>
-          <li class="mixingnav"><a href="/index.html#mixing">Mixing</a></li>
-          <li class="noahkleinnav"><a href="/index.html">Noah Klein</a></li>
-          <li class="merchnav"><a href="/index.html#merch">Merch</a></li>
-          <li class="workwithmehnav"><a href="/index.html#workwithme">Work With Me</a></li>
-        </ul>
-      </div>
-      <!-- Social links-->
-      <div class="links">
-        <div class="container" >
-          <ul>
-            <li class="socialmediaicon"><a href="https://open.spotify.com/artist/6v46qXvQK6xsSibC2xnftD" target="_blank">
-              <i class="fa fa-spotify" aria-hidden="true"></i>
-            </a></li>
-            <li class="socialmediaicon"><a href="https://www.instagram.com/noahkleinmusic/" target="_blank">
-              <i class="fa fa-instagram"></i>
-            </a></li>
-            <li class="socialmediaicon"><a href="https://www.youtube.com/noahkleinmusic" target="_blank">
-              <i class="fa fa-youtube"></i>
-            </a></li>
-            <li class="socialmediaicon"><a href="https://soundcloud.com/noahklein" target="_blank">
-              <i class="fa fa-soundcloud"></i>
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-  <body style="background-color: #151515">
-    <!-- loading header from .header-->
-    <div class="detailMain">
-      <div class="detailSongwriterAndProduction">
-        <div class="container">
-          <h4>Songwriting & Production</h4>
-          <h3>Joseph Feinstein</h3>
-          <!-- bootstrap 4 Grid System-->
+  <body>
+    <header id="header"></header>
+    <script>
+      $("#header").load( "/header.html" );
+    </script> 
+    <main>
+      <div class="detailMain">
+        <div class="detailSongwriterAndProduction">
           <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="container">
-                  <div class="jumbotron">
-                  <p>Joseph and I met when I was looking for artists experimenting with new sounds in the Berlin music scene. We challenge each other to write songs out of our comfort zones.</p>
+            <h4>Songwriting & Production</h4>
+            <h3>Joseph Feinstein</h3>
+            <!-- bootstrap 4 Grid System-->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="container">
+                    <div class="jumbotron">
+                    <p>Joseph and I met when I was looking for artists experimenting with new sounds in the Berlin music scene. We challenge each other to write songs out of our comfort zones.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="container">
-                  <img src="/img/josephfeinstein.jpg" alt="josephfeinstein">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="container">
+                    <img src="/img/josephfeinstein.jpg" alt="josephfeinstein">
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="container">
-                  <div class="back">
-                    <div class="container">
-                      <a href="/index.html#songwritingandproduction"><p>&larr; back</p></a>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="container">
+                    <div class="back">
+                      <div class="container">
+                        <a href="/index.html#songwritingandproduction"><p>&larr; back</p></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -88,20 +62,16 @@
           </div>
         </div>
       </div>
-    </div>
-     <div class="footer">
-      <ul class="footer-law">
-        <li><a href="imprint.html"class="imprintbutton">&nbsp;Imprint</a></li>
-        <li><a href="privacy.html"class="privacypolicy"> Privacy</a></li>
-      </ul>
-      <p>Coded with <3 by &copy; 2020 Noah Klein</p>
-    </div>
+    </main> 
+    <footer id="footer"></footer>
+    <script>
+      $("#footer" ).load("/footer.html" );
+    </script> 
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3ffaa973b547f0d5572a1f566/aeb9dee5a655bef3ccd515a7c.js");</script>
-    <script>includeHTML();</script>
     <script src="/js/index.js"></script>
   </body>
 </html>

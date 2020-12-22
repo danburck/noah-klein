@@ -1,32 +1,32 @@
 
-.footer {
+footer {
 background-color: #E9ECEF;
 position: relative;
 text-align: center;
 }
 
-.footer .inner {
+footer .inner {
 	position: absolute;
 	bottom: 30px;
 	width: 100%;
 }
 
-.footer-law {
+footer-law {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer ul {
+footer ul {
   padding-left: 0;
 }
 
-.footer li {
+footer li {
 	display:inline;
   padding: 0 4px 0 4px
 }
 
-.footer a {
+footer a {
   text-decoration:none;
   color:#696969;
   position: relative;
@@ -36,12 +36,12 @@ text-align: center;
   opacity: 0.8;
 }
 
-.footer a:hover {
+footer a:hover {
 	color: #696969;
 	cursor: pointer;
   }
 
-.footer p {
+footer p {
 	color:#696969;
   letter-spacing: 4px;
   font-size:9px;
