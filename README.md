@@ -12,4 +12,7 @@ My motivation in this project was to build a static website from scratch using H
 
 
 ## Screenshots
-![Landing Page](http://img/screenshot_landingpage.png "Landing Page")
+![Landing Page](/img/screenshot_landingpage.png "Landing Page")
+
+## Usage
+Visit here [Noah Klein](https://www.noah-klein.com/)
